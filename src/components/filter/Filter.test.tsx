@@ -3,7 +3,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Filter from "./Filter";
-describe("Filter", () => {
+describe("<Filter />", () => {
   it("should render a select element with options", () => {
     // Arrange
     const selectedFilter = "";
