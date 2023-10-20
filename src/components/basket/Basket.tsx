@@ -1,7 +1,7 @@
 /** @format */
 
 import Image from "next/image";
-import { Basket as BasketType, IndexedProducts } from "@common/types"; // Assuming you have these types defined
+import { Basket as BasketType, IndexedProducts } from "@common/types";
 import React from "react";
 
 type BasketProps = {
