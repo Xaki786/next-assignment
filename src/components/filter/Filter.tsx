@@ -17,7 +17,7 @@ const Filter: React.FC<FilterProps> = ({
     return null;
   }
   return (
-    <div className="w-full h-12">
+    <div className="w-full h-12" data-testid="filters">
       <label
         htmlFor="colorFilter"
         className="block text-sm font-medium text-gray-700"

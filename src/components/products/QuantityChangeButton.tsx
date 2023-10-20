@@ -21,6 +21,7 @@ const QuantityChangeButton: React.FC<QuantityChangeButton> = ({
   return (
     <button
       onClick={() => onChangeQuantity(productId)}
+      data-testid={`quantity-change-button-${productId}-${operator}`}
       className={`bg-gray-300 w-4 h-4 text-white p-4 rounded ${disabledClass} focus:outline-none focus:ring-2 focus:ring-white-950 focus:ring-opacity-50 flex justify-center items-center`}
       disabled={disabled}
     >

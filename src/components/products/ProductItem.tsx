@@ -21,7 +21,10 @@ const ProductItem: React.FC<ProductItemProps> = ({
   onRemove,
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 p-4 border-b min-w-64">
+    <div
+      className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 p-4 border-b min-w-64"
+      data-testid={`product-${product.id}`}
+    >
       <div className="flex justify-center items-center w-full sm:w-1/4">
         <Image
           src={product.img}
