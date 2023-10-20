@@ -23,7 +23,10 @@ const Basket: React.FC<BasketProps> = ({ basket, indexedProducts }) => {
   };
 
   return (
-    <div className="border p-4 rounded-md shadow-sm space-y-4 bg-white">
+    <div
+      className="border p-4 rounded-md shadow-sm space-y-4 bg-white"
+      data-testid="basket-component"
+    >
       <h2 className="text-xl font-bold border-b pb-2">Your Basket</h2>
       <ul className="space-y-2">
         {basketKeys.map((productId) => {
@@ -33,6 +36,7 @@ const Basket: React.FC<BasketProps> = ({ basket, indexedProducts }) => {
             <li
               key={productId}
               className="flex justify-between items-center border-b pb-2 pt-2"
+              data-testid="basket-item"
             >
               <div className="flex items-center space-x-2">
                 <Image
